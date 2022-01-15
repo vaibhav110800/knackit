@@ -149,12 +149,87 @@
 
     <!------------------------------- SEC4  ---------------------------->
     <div class="sec4">
+        <section class="sec4-wrapper">
+            <div class="sec4-container">
 
+                <div class="sec4-slideDiv">
+                    <article class="sec4-slide active">
+                        <div class="sec4-l">
+                            <h1>What you will get here1</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit et amet,
+                                lacu</p>
+                        </div>
+                        <div class="sec4-r">
+                            <img class="sec4-img1" src="./images/sec-4/1.png" alt="">
+                            <img class="sec4-img2" src="./images/sec-4/2.png" alt="">
+                            <img class="sec4-img3" src="./images/sec-4/3.png" alt="">
+                            <img class="sec4-img4" src="./images/sec-4/4.png" alt="">
+                        </div>
+                    </article>
+
+                    <article class="sec4-slide">
+                        <div class="sec4-l">
+                            <h1>What you will get here2</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit et amet,
+                                lacu</p>
+                        </div>
+                        <div class="sec4-r">
+                            <img class="sec4-img1" src="./images/sec-4/1.png" alt="">
+                            <img class="sec4-img2" src="./images/sec-4/2.png" alt="">
+                            <img class="sec4-img3" src="./images/sec-4/3.png" alt="">
+                            <img class="sec4-img4" src="./images/sec-4/4.png" alt="">
+                        </div>
+                    </article>
+
+                    <article class="sec4-slide">
+                        <div class="sec4-l">
+                            <h1>What you will get here3</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit et amet,
+                                lacu</p>
+                        </div>
+                        <div class="sec4-r">
+                            <img class="sec4-img1" src="./images/sec-4/1.png" alt="">
+                            <img class="sec4-img2" src="./images/sec-4/2.png" alt="">
+                            <img class="sec4-img3" src="./images/sec-4/3.png" alt="">
+                            <img class="sec4-img4" src="./images/sec-4/4.png" alt="">
+                        </div>
+                    </article>
+
+                    <article class="sec4-slide">
+                        <div class="sec4-l">
+                            <h1>What you will get here4</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit et amet,
+                                lacu</p>
+                        </div>
+                        <div class="sec4-r">
+                            <img class="sec4-img1" src="./images/sec-4/1.png" alt="">
+                            <img class="sec4-img2" src="./images/sec-4/2.png" alt="">
+                            <img class="sec4-img3" src="./images/sec-4/3.png" alt="">
+                            <img class="sec4-img4" src="./images/sec-4/4.png" alt="">
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="sec4-controls">
+                    <button class="sec4-button" type="button" aria-label="Go to first image"></button>
+                    <button class="sec4-button" type="button" aria-label="Go to second image"></button>
+                    <button class="sec4-button" type="button" aria-label="Go to third image"></button>
+                    <button class="sec4-button" type="button" aria-label="Go to fourth image"></button>
+                </nav>
+
+            </div>
+        </section>
     </div>
 
     <!------------------------------ sec5 ---------------------------->
     <div class="sec5">
+        <h2>Become a Creator</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit et amet, lacus at risus
+            suspendisse et. Tellus blandit nisi at sapien quam.</p>
 
+        <div class="sec5-inner">
+
+        </div>
 
     </div>
 
@@ -184,17 +259,28 @@
     </script>
 
     <script>
-        const slideValue = document.querySelector("span");
-        const inputSlider = document.querySelector("input");
-        inputSlider.oninput = (() => {
-            let value = inputSlider.value;
-            slideValue.textContent = value;
-            slideValue.style.left = (value / 2) + "%";
-            slideValue.classList.add("show");
-        });
-        inputSlider.onblur = (() => {
-            slideValue.classList.remove("show");
-        });
+        (function () {
+
+            function controls() {
+                $(this).addClass('sec4-selected').siblings('sec4-button').removeClass('sec4-selected');
+                $('.sec4-slideDiv').animate({
+                    top: -$('.sec4-container').height() * $(this).index()
+                }, 450);
+            }
+
+            /***Event Listeners***/
+            const runCode = () => {
+                const button = document.querySelectorAll('.sec4-button');
+                if (button) {
+                    for (var i = 0; i < button.length; i++) {
+                        button[i].addEventListener('click', controls, false);
+                    }
+                }
+            }
+
+            runCode();
+
+        })();
     </script>
 
 </body>
