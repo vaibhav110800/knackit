@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Raleway:wght@500&family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@700&family=Lato:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Raleway:wght@700&family=Roboto:wght@700&display=swap');
 
 /* 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif;
-
-font-family: 'Abril Fatface', cursive;
+font-family: 'Roboto', sans-serif
+font-family: 'Inter', sans-serif;
 
 @media screen and (min-width:768px) and (max-width:1199px){
     
@@ -63,7 +58,7 @@ button:focus {outline:0;}
 }
 .nav-link{
     margin-right: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     color: #333333 !important;
     transition: .2s ease-in-out;
@@ -75,12 +70,13 @@ button:focus {outline:0;}
     text-decoration: none;
     margin-right: 15px;
     padding: 8px 25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     color: white !important;
     background-color: #5b6de7;
     border: 4px solid #5b6de7;
     transition: .2s ease-in-out;
+    border-radius:8px ;
 }
 .nav-link1:hover{
     background-color: transparent;
@@ -130,7 +126,6 @@ button:focus {outline:0;}
     position: absolute;
     top: 78%;
     left: 14%;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 60px;
     color: #5b6de7;
@@ -179,19 +174,16 @@ button:focus {outline:0;}
     flex-direction: column;
 }
 .sec1-r-bottom h3{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     color: #384241;
     font-size: 18px;
 }
 .sec1-r-bottom h3 span{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     color: #384241;
     font-size: 60px;
 }
 .sec1-r-bottom a{
-    font-family: 'Poppins', sans-serif;
     width: 100%;
     background-color: #5b6de7;
     text-decoration: none;
@@ -208,10 +200,9 @@ button:focus {outline:0;}
     width: 100%;
     text-align: center;
     place-items: center;
-    background: whitesmoke;
+    /* background: whitesmoke; */
 }
 .sec1-r h2{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 14px;
     color: #384241;
@@ -238,7 +229,6 @@ button:focus {outline:0;}
     flex-direction: column;
 }
 .sec2-box h3{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 14px;
     color: white;
@@ -255,13 +245,11 @@ button:focus {outline:0;}
 }
 .sec3 h2{
     margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 36px;
     color: #384241;
 }
 .sec3 p{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
     color: #878787;
@@ -308,7 +296,6 @@ button:focus {outline:0;}
     list-style-type:none;
 }
 .sec3-box2 li{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 22px;
     color: #757575;
@@ -338,7 +325,6 @@ button:focus {outline:0;}
     width: 80%;
     margin: 0px auto;
     padding-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     text-align: left;
     font-size: 19px;
@@ -348,7 +334,6 @@ button:focus {outline:0;}
     width: 80%;
     margin: 0px auto;
     padding-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 14px;
     color: #757575;
@@ -408,13 +393,11 @@ button:focus {outline:0;}
       height: inherit;
   }
   .sec4-l h1{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 36px;
     color: #384241;
   }
   .sec4-l p{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
     line-height: 20px;
@@ -512,14 +495,12 @@ button:focus {outline:0;}
     flex-direction: column;
 }
 .sec5 h2{
-    margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
     letter-spacing: 1.5px;
     font-size: 36px;
     color: #384241;
 }
 .sec5 p{
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
     color: #878787;
@@ -528,11 +509,51 @@ button:focus {outline:0;}
     text-align: center;
 }
 .sec5-inner{
-    margin: 0 auto;
+    /* background-color: wheat; */
+    margin: 0px auto;
     max-width: 1200px;
     min-height: 600px;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+}
+.sec5-img-1{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+.sec5-img-2{
+    position: absolute;
+    top: 32%;
+    left: 77%;
+}
+.sec5-img-3{
+    position: absolute;
+    top: 65%;
+    left: 77%;
+}
+.sec5-img-4{
+    position: absolute;
+    top: 65%;
+    left: 14%;
+}
+.sec5-img-5{
+    position: absolute;
+    top: 32%;
+    left: 8.5%;
+}
+.sec5-img-l{
+    position: absolute;
+    top: 45%;
+    left: 1%;
+}
+.sec5-img-r{
+    position: absolute;
+    top: 45%;
+    right: 1%;
+}
+.sec5-img-h3{
+    position: absolute;
+    top: 65%;
+    left: 28%;
 }
 
 /* ---------------------- footer ----------------------- */
@@ -573,7 +594,7 @@ button:focus {outline:0;}
 }
 .f-box h3{
     margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     width: 85%;
     font-size: 12px;
@@ -582,7 +603,7 @@ button:focus {outline:0;}
     line-height: 25px;
 }
 .f-box h4{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
     color: #5b6de7;
@@ -591,7 +612,7 @@ button:focus {outline:0;}
 .f-box a{
     margin-top: 22px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
     color: #384241;
@@ -633,7 +654,7 @@ button:focus {outline:0;}
 }
 
 .f-box input{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     font-size: 14px;
     color: #384241;
@@ -650,7 +671,7 @@ button:focus {outline:0;}
     background: #5B6DE7;
     border: 3px solid #5B6DE7;
     border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     font-size: 12px;
     transition: .2s ease-in-out;
