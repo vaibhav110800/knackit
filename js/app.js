@@ -2,35 +2,35 @@
 // window.addEventListener('load', AOS.refresh)
 
 //   all ------------------
-function initParadoxWay() {
-    "use strict";
+// function initParadoxWay() {
+//     "use strict";
 
-    if ($(".testimonials-carousel").length > 0) {
-        var j2 = new Swiper(".testimonials-carousel .swiper-container", {
-            preloadImages: false,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            grabCursor: true,
-            mousewheel: false,
-            centeredSlides: true,
-            pagination: {
-                el: '.tc-pagination',
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: '.listing-carousel-button-next',
-                prevEl: '.listing-carousel-button-prev',
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 3,
-                },
+//     if ($(".testimonials-carousel").length > 0) {
+//         var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+//             preloadImages: false,
+//             slidesPerView: 1,
+//             spaceBetween: 20,
+//             loop: true,
+//             grabCursor: true,
+//             mousewheel: false,
+//             centeredSlides: true,
+//             pagination: {
+//                 el: '.tc-pagination',
+//                 clickable: true,
+//                 dynamicBullets: true,
+//             },
+//             navigation: {
+//                 nextEl: '.listing-carousel-button-next',
+//                 prevEl: '.listing-carousel-button-prev',
+//             },
+//             breakpoints: {
+//                 1024: {
+//                     slidesPerView: 3,
+//                 },
 
-            }
-        });
-    }
+//             }
+//         });
+//     }
 
     // bubbles -----------------
 
@@ -46,9 +46,9 @@ function initParadoxWay() {
     //     });
     // }, 350);
 
-}
+// }
 
 //   Init All ------------------
-$(document).ready(function () {
-    initParadoxWay();
-});
+// $(document).ready(function () {
+//     initParadoxWay();
+// });
